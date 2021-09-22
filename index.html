@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Lmaoooooo
+    </title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<script src="index.js"></script>
+<body>
+    <div id="wrapper">
+        <div class="entrance">
+            JokeSingh!
+            <div class="inner-entrance">
+                The Dad Joke Site
+            </div>
+        </div>
+        <hr>
+        <div class="jokes">
+            <form class="joke-form" action="" method="post">
+                <h2 class="titles">Categories: </h2><br>
+                    <input type="radio" name="jokes-any" id="jokes-any" value="Any" checked>
+                    <label for="jokes-any">Any</label><br>
+                    <input type="radio" name="jokes-any" id="jokes-dad">
+                    <label for="jokes-dad">Dad Jokes</label><br>
+                    <input type="radio" name="jokes-any" id="jokes-custom" value="Custom">
+                    <label for="jokes-custom">Custom</label><br>
+                    <div style="padding-left: 12px;">
+                        <input type="checkbox" id="joke-prog" disabled>
+                        <label for="joke-prog">Programming</label>
+                        <br>
+                        <input type="checkbox" id="joke-misc" disabled>
+                        <label for="joke-misc">Misc.</label>
+                        <br>
+                        <input type="checkbox" id="joke-dark" disabled>
+                        <label for="joke-dark">Dark</label>
+                        <br>
+                        <input type="checkbox" id="joke-puns" disabled>
+                        <label for="joke-puns">Puns</label>
+                        <br>
+                        <input type="checkbox" id="joke-spooky" disabled>
+                        <label for="joke-spooky">Spooky</label>
+                    </div>
+                <h2 class="titles">Blacklist Flags: </h2><br>
+                    <div class="joke-flags" style="padding-left: 12px; display: flex;">
+                        <div class="left" style="padding-right: 20px; ">
+                            <input type="checkbox" id="flag-nsfw">
+                            <label for="flag-nsfw">NSFW</label><br>
+                            <input type="checkbox" id="flag-reli">
+                            <label for="flag-reli">Religious</label><br>
+                            <input type="checkbox" id="flag-poli">
+                            <label for="flag-poli">Political</label><br>
+                        </div>
+                        <div class="right">
+                            <input type="checkbox" id="flag-race">
+                            <label for="flag-race">Racist</label><br>
+                            <input type="checkbox" id="flag-secc">
+                            <label for="flag-secc">Sexist</label><br>
+                            <input type="checkbox" id="flag-expl">
+                            <label for="flag-expl">Explicit</label><br>
+                        </div>
+                    </div>
+                <input type="submit" value="Hit It!" id="joke-request">
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
