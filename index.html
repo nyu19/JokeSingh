@@ -19,17 +19,17 @@
                 The Dad Joke Site
             </div>
         </div>
-        <hr>
-        <div class="jokes">
-            <form class="joke-form" action="" method="post">
-                <h2 class="titles">Categories: </h2><br>
+        <hr style="margin-bottom: 6px;">
+        <div class="jokes" style="display: flex;">
+            <div class="joke-form">
+                <h2 class="titles" style="margin-top: 0px;">Categories: </h2><br>
                     <input type="radio" name="jokes-any" id="jokes-any" value="Any" checked>
                     <label for="jokes-any">Any</label><br>
                     <input type="radio" name="jokes-any" id="jokes-dad">
                     <label for="jokes-dad">Dad Jokes</label><br>
                     <input type="radio" name="jokes-any" id="jokes-custom" value="Custom">
                     <label for="jokes-custom">Custom</label><br>
-                    <div style="padding-left: 12px;">
+                    <div style="padding-left: 30px; padding-top: 5px;">
                         <input type="checkbox" id="joke-prog" disabled>
                         <label for="joke-prog">Programming</label>
                         <br>
@@ -46,7 +46,7 @@
                         <label for="joke-spooky">Spooky</label>
                     </div>
                 <h2 class="titles">Blacklist Flags: </h2><br>
-                    <div class="joke-flags" style="padding-left: 12px; display: flex;">
+                    <div class="joke-flags" style="padding-left: 30px; display: flex;">
                         <div class="left" style="padding-right: 20px; ">
                             <input type="checkbox" id="flag-nsfw">
                             <label for="flag-nsfw">NSFW</label><br>
@@ -64,9 +64,15 @@
                             <label for="flag-expl">Explicit</label><br>
                         </div>
                     </div>
-                <input type="submit" value="Hit It!" id="joke-request">
+                <input type="button" value="Hit It!" id="joke-request" onclick="jokeRequested()">
 
-            </form>
+                </div>
+            <div style="background-color: gray; height: inherit; width: 1px; margin: 10px; opacity: 0.7;"></div>
+            <div class="output">
+                <p class="op-text">
+                    LMAOOOO
+                </p>
+            </div>
         </div>
     </div>
 </body>
