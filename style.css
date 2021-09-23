@@ -46,7 +46,7 @@ body {
     /* animation-delay: 2s; */
 }
 .joke-form{
-    font-size: larger;
+    font-size: x-large;
     text-align: left;
     box-sizing: border-box;
     width: 50%;
@@ -63,11 +63,12 @@ body {
     margin-bottom: 0px;
     letter-spacing: 1.5px;
     color:whitesmoke;
+    font-size: larger;
 }
 #joke-request{
     margin-top: 20px;
     /* background-color: #203460;  */
-    background-color: #464091; 
+    background-color: #5030de82; 
     border-radius: 50px;
     border: none;
     color: white;
@@ -89,15 +90,8 @@ body {
     transform: scale(1.2);
 }
 input[type='radio']{
-    width: 12px;
-    height: 12px;
-    border-radius: 15px;
-    position: relative;
-    background-color: #203460;
-    content: '';
-    display: inline-block;
     visibility: hidden;
-    border: 2px solid white;
+    
 
 }
 input[type='radio']:checked:after{
@@ -105,27 +99,18 @@ input[type='radio']:checked:after{
     height: 16px;
     border-radius: 20px;
     position: relative;
-    background-color: #000;
-    /* background-image: linear-gradient(135deg, #0cbaba 0%, #380036 74%); */
-    /* border-image: linear-gradient(45deg, #380036 74%, #0cbaba 0%); */
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    background-image: url("assets/plus.png");
 }
 .output{
     font-family: 'Architects Daughter', cursive;
     /* padding: 10px; */
     height: fit-content;
-    width: 45%;
+    width: 50%;
     text-align: center;
     border-radius: 10px;
     border-width: 8px;
-    /* border-color: red; */
-    /* background-image: linear-gradient(to right bottom,#d367c1 10%,#dedf40 25%,#62cb5c 50%,#00bbcb 75%,#ab79d6 90%); */
-    font-size: 24px;
+    font-size: 25px;
     padding: 6px;
-
+    margin: 0px;
 }
 
 input[type="checkbox"]{
@@ -133,27 +118,32 @@ input[type="checkbox"]{
 }
 
 #flag-nsfw:checked + #nsfw{
-    color: rgb(200, 0, 0);
+    color: red;
 }
 #flag-reli:checked + #reli{
-    color: rgb(200, 0, 0);
+    color: red;
 }
 #flag-poli:checked + #poli{
-    color: rgb(200, 0, 0);
+    color: red;
 }
 #flag-race:checked + #race{
-    color: rgb(200, 0, 0);
+    color: red;
 }
 #flag-secc:checked + #secc{
-    color: rgb(200, 0, 0);
+    color: red;
 }
 #flag-expl:checked + #expl{
-    color: rgb(200, 0, 0);
+    color: red;
 }
 input[type="checkbox"]:disabled + label{
     color: rgb(95, 95, 95);
 }
-
+#one:checked + label{
+    color: rgb(0, 255, 255);
+}
+#two:checked + label{
+    color: rgb(0, 255, 255);
+}
 #joke-prog:checked + #prog{
     color: limegreen;
 }
@@ -169,9 +159,19 @@ input[type="checkbox"]:disabled + label{
 #joke-spooky:checked + #spooky{
     color: limegreen;
 }
+#joke-chri:checked + #chri{
+    color: limegreen;
+}
+#jokes-any:checked + label{
+    color:red;
+}
+#jokes-dad:checked + label{
+    color:red;
+}
+#jokes-custom:checked + label{
+    color:red;
+}
 
 
-/*
 .entrance{-webkit-animation:flicker-in-1 2s linear 1s both;animation:flicker-in-1 2s linear 1s both}
  @-webkit-keyframes flicker-in-1{0%{opacity:0}10%{opacity:0}10.1%{opacity:1}10.2%{opacity:0}20%{opacity:0}20.1%{opacity:1}20.6%{opacity:0}30%{opacity:0}30.1%{opacity:1}30.5%{opacity:1}30.6%{opacity:0}45%{opacity:0}45.1%{opacity:1}50%{opacity:1}55%{opacity:1}55.1%{opacity:0}57%{opacity:0}57.1%{opacity:1}60%{opacity:1}60.1%{opacity:0}65%{opacity:0}65.1%{opacity:1}75%{opacity:1}75.1%{opacity:0}77%{opacity:0}77.1%{opacity:1}85%{opacity:1}85.1%{opacity:0}86%{opacity:0}86.1%{opacity:1}100%{opacity:1}}@keyframes flicker-in-1{0%{opacity:0}10%{opacity:0}10.1%{opacity:1}10.2%{opacity:0}20%{opacity:0}20.1%{opacity:1}20.6%{opacity:0}30%{opacity:0}30.1%{opacity:1}30.5%{opacity:1}30.6%{opacity:0}45%{opacity:0}45.1%{opacity:1}50%{opacity:1}55%{opacity:1}55.1%{opacity:0}57%{opacity:0}57.1%{opacity:1}60%{opacity:1}60.1%{opacity:0}65%{opacity:0}65.1%{opacity:1}75%{opacity:1}75.1%{opacity:0}77%{opacity:0}77.1%{opacity:1}85%{opacity:1}85.1%{opacity:0}86%{opacity:0}86.1%{opacity:1}100%{opacity:1}}
-*/

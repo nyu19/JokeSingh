@@ -4,31 +4,32 @@
     <title>
         Lmaoooooo
     </title>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="icon" href="assets/gg2.png">
 </head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
-<script src="index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <body>
     <div id="wrapper">
         <div class="entrance">
             JokeSingh!
             <div class="inner-entrance">
-                The Dad Joke Site
+                The Lame Joke Site
             </div>
         </div>
-        <hr style="margin-bottom: 6px;" class="entrance">
+        <hr style="margin: 6px 0px; background-color: gray; opacity: 0.7;" class="entrance">
         <div class="jokes entrance" style="display: flex;">
             <div class="joke-form">
                 <h2 class="titles" style="margin-top: 0px;">Categories: </h2><br>
-                    <input type="radio" name="jokes-any" id="jokes-any" onclick="disabler()" checked>
+                    <input type="radio" name="jokes-any" id="jokes-any" onclick="disabler()" value="any" checked>
                     <label for="jokes-any" class="widable">Any</label><br>
-                    <input type="radio" name="jokes-any" id="jokes-dad" onclick="disabler()">
-                    <label for="jokes-dad">Dad Jokes</label><br>
-                    <input type="radio" name="jokes-any" id="jokes-custom" value="Custom" onclick="enabler()">
+                    <!-- <input type="radio" name="jokes-any" id="jokes-dad" onclick="disabler()" value="dad">
+                    <label for="jokes-dad">Dad Jokes</label><br> -->
+                    <input type="radio" name="jokes-any" id="jokes-custom" value="custom" onclick="enabler()">
                     <label for="jokes-custom">Custom</label><br>
                     
                     <div style="padding-left: 15px; padding-top: 5px;">
@@ -46,8 +47,11 @@
                         <br>
                         <input type="checkbox" id="joke-spooky" disabled>
                         <label for="joke-spooky" id="spooky">Spooky</label>
+                        <br>
+                        <input type="checkbox" id="joke-chri" disabled>
+                        <label for="joke-chri" id="chri">Christmas</label>
                     </div>
-                <h2 class="titles">Blacklist Flags: </h2><br>
+                <!-- <h2 class="titles">Blacklist Flags: </h2><br>
                     <div class="joke-flags" style="display: flex; font-size: larger">
                         <div class="left" style="padding-right: 20px; ">
                             <input type="checkbox" id="flag-nsfw" class="bl-checkbox">
@@ -69,13 +73,34 @@
                             <input type="checkbox" id="flag-expl" class="bl-checkbox">
                             <label for="flag-expl" id="expl" class="hv-lable">Explicit</label><br>
                         </div>
+                    </div> -->
+                <h2 class="titles" style="margin-bottom: 1px;">
+                     Joke Type: 
+                </h2><br>
+
+                    <div id="twopart">
+                        <input type="checkbox" name="part" id="one" checked>
+                        <label for="one">Single</label> 
+                        <input type="checkbox" name="part" id="two" checked>
+                        <label for="two">Two Part</label>
                     </div>
-                <input type="button" value="Hit It!" id="joke-request" onclick="jokeRequested()">
+
+                    <input type="button" value="Hit It!" id="joke-request" onclick="jokeRequested()">
 
                 </div>
-            <div style="background-color: gray; height: inherit; width: 1px; margin: 10px; opacity: 0.7;"></div>
-            <div class="output" id="output">
-                Lolol
+                <div style="background-color: white;position: relative;top: -6px;bottom: 50px; height: inherit; width: 1px; margin: 10px; opacity: 0.7;"></div>
+                <div class="output" id="output">
+                    <div id="category" style="color: yellow; margin: 0px 10px; font-size: larger; text-align: left; ">
+                        <p style="visibility: hidden;">
+                            .
+                        </p>
+                    </div>
+                    <div id="joke-text">
+                        <h3 style="color: gray; opacity: 0.3;">
+                            Joke Appears here
+                        </h3>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
