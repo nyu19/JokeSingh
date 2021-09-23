@@ -43,6 +43,7 @@ body {
     padding-left: 2.5%;
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
+    /* animation-delay: 2s; */
 }
 .joke-form{
     font-size: larger;
