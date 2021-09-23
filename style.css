@@ -1,8 +1,8 @@
 html {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(to right bottom, #091057, #0b1a5a, #10235d, #172c5f, #203460, #2a3157, #2f2f4e, #312d45, #2c2232, #221821, #160f13, #000000);
-    background-color: #160f13;
+    /* background-image: linear-gradient(to right bottom, #091057, #0b1a5a, #10235d, #172c5f, #203460, #2a3157, #2f2f4e, #312d45, #2c2232); */
+    background-color: #1D1D1D;
     user-select: none;
 }
 body {
@@ -24,7 +24,7 @@ body {
 }
 .entrance{
     text-align: left;
-    font-style: bold;
+    /* font-style: bold; */
     font-size: 50px;
     opacity: 1.0;
     padding-left: 3%;
@@ -82,6 +82,12 @@ body {
     box-shadow: 0 12px 16px 0 #312d45, 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+#joke-request:active {
+    transform: scale(0.96);
+}
+.widable:hover{
+    transform: scale(1.2);
+}
 input[type='radio']{
     width: 12px;
     height: 12px;
@@ -109,7 +115,42 @@ input[type='radio']:checked:after{
 }
 .output{
     font-family: 'Architects Daughter', cursive;
-    padding: 10px;
+    /* padding: 10px; */
+    height: fit-content;
+    width: 45%;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 8px;
+    /* border-color: red; */
+    /* background-image: linear-gradient(to right bottom,#d367c1 10%,#dedf40 25%,#62cb5c 50%,#00bbcb 75%,#ab79d6 90%); */
+    font-size: 24px;
+    padding: 6px;
+
 }
-.entrance{-webkit-animation:flicker-in-1 2s linear 1s /*infinite*/ both;animation:flicker-in-1 2s linear 1s /*infinite*/ both}
+
+.bl-checkbox{
+    visibility: hidden;
+}
+#flag-nsfw:checked + #nsfw{
+    color: rgb(160, 0, 0);
+}
+#flag-reli:checked + #reli{
+    color: rgb(160, 0, 0);
+}
+#flag-poli:checked + #poli{
+    color: rgb(160, 0, 0);
+}
+#flag-race:checked + #race{
+    color: rgb(160, 0, 0);
+}
+#flag-secc:checked + #secc{
+    color: rgb(160, 0, 0);
+}
+#flag-expl:checked + #expl{
+    color: rgb(160, 0, 0);
+}
+
+/*
+.entrance{-webkit-animation:flicker-in-1 2s linear 1s both;animation:flicker-in-1 2s linear 1s both}
  @-webkit-keyframes flicker-in-1{0%{opacity:0}10%{opacity:0}10.1%{opacity:1}10.2%{opacity:0}20%{opacity:0}20.1%{opacity:1}20.6%{opacity:0}30%{opacity:0}30.1%{opacity:1}30.5%{opacity:1}30.6%{opacity:0}45%{opacity:0}45.1%{opacity:1}50%{opacity:1}55%{opacity:1}55.1%{opacity:0}57%{opacity:0}57.1%{opacity:1}60%{opacity:1}60.1%{opacity:0}65%{opacity:0}65.1%{opacity:1}75%{opacity:1}75.1%{opacity:0}77%{opacity:0}77.1%{opacity:1}85%{opacity:1}85.1%{opacity:0}86%{opacity:0}86.1%{opacity:1}100%{opacity:1}}@keyframes flicker-in-1{0%{opacity:0}10%{opacity:0}10.1%{opacity:1}10.2%{opacity:0}20%{opacity:0}20.1%{opacity:1}20.6%{opacity:0}30%{opacity:0}30.1%{opacity:1}30.5%{opacity:1}30.6%{opacity:0}45%{opacity:0}45.1%{opacity:1}50%{opacity:1}55%{opacity:1}55.1%{opacity:0}57%{opacity:0}57.1%{opacity:1}60%{opacity:1}60.1%{opacity:0}65%{opacity:0}65.1%{opacity:1}75%{opacity:1}75.1%{opacity:0}77%{opacity:0}77.1%{opacity:1}85%{opacity:1}85.1%{opacity:0}86%{opacity:0}86.1%{opacity:1}100%{opacity:1}}
+*/

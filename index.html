@@ -11,6 +11,7 @@
 
 <link rel="stylesheet" href="style.css">
 <script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <body>
     <div id="wrapper">
         <div class="entrance">
@@ -24,7 +25,7 @@
             <div class="joke-form">
                 <h2 class="titles" style="margin-top: 0px;">Categories: </h2><br>
                     <input type="radio" name="jokes-any" id="jokes-any" value="Any" checked>
-                    <label for="jokes-any">Any</label><br>
+                    <label for="jokes-any" class="widable">Any</label><br>
                     <input type="radio" name="jokes-any" id="jokes-dad">
                     <label for="jokes-dad">Dad Jokes</label><br>
                     <input type="radio" name="jokes-any" id="jokes-custom" value="Custom">
@@ -46,32 +47,34 @@
                         <label for="joke-spooky">Spooky</label>
                     </div>
                 <h2 class="titles">Blacklist Flags: </h2><br>
-                    <div class="joke-flags" style="padding-left: 30px; display: flex;">
+                    <div class="joke-flags" style="display: flex;">
                         <div class="left" style="padding-right: 20px; ">
-                            <input type="checkbox" id="flag-nsfw">
-                            <label for="flag-nsfw">NSFW</label><br>
-                            <input type="checkbox" id="flag-reli">
-                            <label for="flag-reli">Religious</label><br>
-                            <input type="checkbox" id="flag-poli">
-                            <label for="flag-poli">Political</label><br>
+                            <input type="checkbox" id="flag-nsfw" class="bl-checkbox">
+                            <label for="flag-nsfw" id="nsfw" class="hv-lable">NSFW</label><br>
+
+                            <input type="checkbox" id="flag-reli" class="bl-checkbox">
+                            <label for="flag-reli" id="reli" class="hv-lable">Religious</label><br>
+
+                            <input type="checkbox" id="flag-poli" class="bl-checkbox">
+                            <label for="flag-poli" id="poli" class="hv-lable">Political</label><br>
                         </div>
                         <div class="right">
-                            <input type="checkbox" id="flag-race">
-                            <label for="flag-race">Racist</label><br>
-                            <input type="checkbox" id="flag-secc">
-                            <label for="flag-secc">Sexist</label><br>
-                            <input type="checkbox" id="flag-expl">
-                            <label for="flag-expl">Explicit</label><br>
+                            <input type="checkbox" id="flag-race" class="bl-checkbox">
+                            <label for="flag-race" id="race" class="hv-lable">Racist</label><br>
+
+                            <input type="checkbox" id="flag-secc" class="bl-checkbox">
+                            <label for="flag-secc" id="secc" class="hv-lable">Sexist</label><br>
+
+                            <input type="checkbox" id="flag-expl" class="bl-checkbox">
+                            <label for="flag-expl" id="expl" class="hv-lable">Explicit</label><br>
                         </div>
                     </div>
                 <input type="button" value="Hit It!" id="joke-request" onclick="jokeRequested()">
 
                 </div>
             <div style="background-color: gray; height: inherit; width: 1px; margin: 10px; opacity: 0.7;"></div>
-            <div class="output">
-                <p class="op-text">
-                    LMAOOOO
-                </p>
+            <div class="output" id="output">
+                Lolol
             </div>
         </div>
     </div>
