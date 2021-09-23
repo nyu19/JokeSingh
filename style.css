@@ -132,22 +132,22 @@ input[type='radio']:checked:after{
     visibility: hidden;
 }
 #flag-nsfw:checked + #nsfw{
-    color: rgb(160, 0, 0);
+    color: rgb(200, 0, 0);
 }
 #flag-reli:checked + #reli{
-    color: rgb(160, 0, 0);
+    color: rgb(200, 0, 0);
 }
 #flag-poli:checked + #poli{
-    color: rgb(160, 0, 0);
+    color: rgb(200, 0, 0);
 }
 #flag-race:checked + #race{
-    color: rgb(160, 0, 0);
+    color: rgb(200, 0, 0);
 }
 #flag-secc:checked + #secc{
-    color: rgb(160, 0, 0);
+    color: rgb(200, 0, 0);
 }
 #flag-expl:checked + #expl{
-    color: rgb(160, 0, 0);
+    color: rgb(200, 0, 0);
 }
 
 /*
