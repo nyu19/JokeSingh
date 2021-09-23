@@ -24,30 +24,31 @@
         <div class="jokes entrance" style="display: flex;">
             <div class="joke-form">
                 <h2 class="titles" style="margin-top: 0px;">Categories: </h2><br>
-                    <input type="radio" name="jokes-any" id="jokes-any" value="Any" checked>
+                    <input type="radio" name="jokes-any" id="jokes-any" onclick="disabler()" checked>
                     <label for="jokes-any" class="widable">Any</label><br>
-                    <input type="radio" name="jokes-any" id="jokes-dad">
+                    <input type="radio" name="jokes-any" id="jokes-dad" onclick="disabler()">
                     <label for="jokes-dad">Dad Jokes</label><br>
-                    <input type="radio" name="jokes-any" id="jokes-custom" value="Custom">
+                    <input type="radio" name="jokes-any" id="jokes-custom" value="Custom" onclick="enabler()">
                     <label for="jokes-custom">Custom</label><br>
-                    <div style="padding-left: 30px; padding-top: 5px;">
+                    
+                    <div style="padding-left: 15px; padding-top: 5px;">
                         <input type="checkbox" id="joke-prog" disabled>
-                        <label for="joke-prog">Programming</label>
+                        <label for="joke-prog" id="prog">Programming</label>
                         <br>
                         <input type="checkbox" id="joke-misc" disabled>
-                        <label for="joke-misc">Misc.</label>
+                        <label for="joke-misc" id="misc">Misc.</label>
                         <br>
                         <input type="checkbox" id="joke-dark" disabled>
-                        <label for="joke-dark">Dark</label>
+                        <label for="joke-dark" id="dark">Dark</label>
                         <br>
                         <input type="checkbox" id="joke-puns" disabled>
-                        <label for="joke-puns">Puns</label>
+                        <label for="joke-puns" id="puns">Puns</label>
                         <br>
                         <input type="checkbox" id="joke-spooky" disabled>
-                        <label for="joke-spooky">Spooky</label>
+                        <label for="joke-spooky" id="spooky">Spooky</label>
                     </div>
                 <h2 class="titles">Blacklist Flags: </h2><br>
-                    <div class="joke-flags" style="display: flex;">
+                    <div class="joke-flags" style="display: flex; font-size: larger">
                         <div class="left" style="padding-right: 20px; ">
                             <input type="checkbox" id="flag-nsfw" class="bl-checkbox">
                             <label for="flag-nsfw" id="nsfw" class="hv-lable">NSFW</label><br>

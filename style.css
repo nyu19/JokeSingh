@@ -128,9 +128,10 @@ input[type='radio']:checked:after{
 
 }
 
-.bl-checkbox{
+input[type="checkbox"]{
     visibility: hidden;
 }
+
 #flag-nsfw:checked + #nsfw{
     color: rgb(200, 0, 0);
 }
@@ -149,6 +150,26 @@ input[type='radio']:checked:after{
 #flag-expl:checked + #expl{
     color: rgb(200, 0, 0);
 }
+input[type="checkbox"]:disabled + label{
+    color: rgb(95, 95, 95);
+}
+
+#joke-prog:checked + #prog{
+    color: limegreen;
+}
+#joke-misc:checked + #misc{
+    color: limegreen;
+}
+#joke-dark:checked + #dark{
+    color: limegreen;
+}
+#joke-puns:checked + #puns{
+    color: limegreen;
+}
+#joke-spooky:checked + #spooky{
+    color: limegreen;
+}
+
 
 /*
 .entrance{-webkit-animation:flicker-in-1 2s linear 1s both;animation:flicker-in-1 2s linear 1s both}
