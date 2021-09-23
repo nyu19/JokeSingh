@@ -2,15 +2,15 @@
 
 const axios = require('axios')
 
-function jokeRequested(){
-    let targetText = document.getElementById("output")
-    targetText.textContent = "Hello"
-    let base_url="https://v2.jokeapi.dev/joke/"
+// function jokeRequested(){
+//     let targetText = document.getElementById("output")
+//     targetText.textContent = "Hello"
+//     let base_url="https://v2.jokeapi.dev/joke/"
     
-    return axios.get(){
+//     return axios.get(){
 
-    }
-}
+//     }
+// }
 
 function enabler(){
     console.log("pk")
