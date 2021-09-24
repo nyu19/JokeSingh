@@ -11,7 +11,9 @@ body {
     margin: 0;
     padding: 0%;
 }
-
+.jokes{
+    height: 100vh;
+}
 #wrapper {
     /* height: 100vh; */
     font-family: 'Architects Daughter', cursive;
@@ -79,11 +81,11 @@ body {
     display: inline-block;
     font-size: 20px;
     font-family: 'Architects Daughter', cursive;
-    transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.4s ease-in-out;
 
 }
 #joke-request:hover {
-    transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.4s ease-in-out;
     box-shadow: 0 12px 16px 0 #312d45, 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -98,12 +100,12 @@ input[type='radio']{
     
 
 }
-input[type='radio']:checked:after{
+/* input[type='radio']:checked:after{
     width: 16px;
     height: 16px;
     border-radius: 20px;
     position: relative;
-}
+} */
 .output{
     font-family: 'Architects Daughter', cursive;
     /* padding: 10px; */
@@ -146,13 +148,13 @@ input[type="checkbox"]:disabled + label{
 
 .trans-red:checked + .trans-red-l{
     transition: all;
-    transition-duration: 0.5s ;
+    transition-duration: 0.4s ;
     color:red;
 }
 
 .abc:checked + .xyz{
     transition: all;
-    transition-duration: 0.5s ;
+    transition-duration: 0.4s ;
     color: limegreen;
 }
 
@@ -161,18 +163,18 @@ input[type="checkbox"]:disabled + label{
 } */
 .one:checked + label{
     transition: all;
-    transition-duration: 0.5s ;
+    transition-duration: 0.4s ;
     color: rgb(0, 255, 255);
 }
 input:checked + label{
     transition: all;
-    transition-duration: 0.5s ;
+    transition-duration: 0.4s ;
     letter-spacing: 3px;
     /* text-transform: scale(1.2); */
 }
 input + label{
     transition: all;
-    transition-duration: 0.5s ;
+    transition-duration: 0.4s ;
 }
 
 
