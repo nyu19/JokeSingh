@@ -14,12 +14,26 @@
 <link rel="stylesheet" href="style.css">
 <body>
     <div id="wrapper">
-        <div class="entrance">
-            JokeSingh!
-            <div class="inner-entrance">
-                The Lame Joke Site
-            </div> 
-        </div>
+        <div style="display: flex; justify-content: space-between;">
+            <div class="entrance">
+                JokeSingh!
+                <div class="inner-entrance">
+                    The Lame Joke Site
+                </div> 
+            </div>
+            <div style="display: inline-block; margin-right: 25px;margin-top: 25px;">
+                <span id="disclaimer" style="opacity: 1; font-size: larger;" 
+                title="DISCLAIMER:
+The views expressed in this Website are not meant to offend any party.
+These have been collected from various platforms &
+we don't have any rights over the copy. 
+These are meant for entertainment purpose only">
+                    Disclaimer
+                </span>
+                <!-- <img id="disclaimer" class="disclaimer" src="assets/stop.png" alt="Disclaimer!" height="50px" width="50px"
+                > -->
+                
+            </div>
         </div>
         <hr style="margin: 6px 0px; background-color: gray; opacity: 0.7;" class="entrance">
         <div class="jokes entrance" style="display: flex;">
@@ -28,16 +42,16 @@
                     <input type="radio" class="trans-red" name="jokes-any" id="jokes-any" onclick="disabler()" value="any" checked>
                     <label for="jokes-any" class="trans-red-l">Any</label><br>
                     <!-- <input type="radio" name="jokes-any" id="jokes-dad" onclick="disabler()" value="dad">
-                    <label for="jokes-dad">Dad Jokes</label><br> -->
-                    <input type="radio" class="trans-red" name="jokes-any" id="jokes-custom" value="custom" onclick="enabler()">
-                    <label for="jokes-custom" class="trans-red-l">Custom</label><br>
-                    
-                    <div style="padding-left: 15px; padding-top: 5px;">
-                        <input type="checkbox" id="joke-prog" class="abc" disabled>
-                        <label for="joke-prog" class="xyz" id="prog">Programming</label>
-                        <br>
-                        <input type="checkbox" id="joke-misc" class="abc" disabled>
-                        <label for="joke-misc" class="xyz" id="misc">Misc.</label>
+                        <label for="jokes-dad">Dad Jokes</label><br> -->
+                        <input type="radio" class="trans-red" name="jokes-any" id="jokes-custom" value="custom" onclick="enabler()">
+                        <label for="jokes-custom" class="trans-red-l">Custom</label><br>
+                        
+                        <div style="padding-left: 15px; padding-top: 5px;">
+                            <input type="checkbox" id="joke-prog" class="abc" disabled>
+                            <label for="joke-prog" class="xyz" id="prog">Programming</label>
+                            <br>
+                            <input type="checkbox" id="joke-misc" class="abc" disabled>
+                            <label for="joke-misc" class="xyz" id="misc">Misc.</label>
                         <br>
                         <input type="checkbox" id="joke-dark" class="abc" disabled>
                         <label for="joke-dark" class="xyz" id="dark">Dark</label>
@@ -56,10 +70,10 @@
                         <div class="left" style="padding-right: 20px; ">
                             <input type="checkbox" id="flag-nsfw" class="bl-checkbox">
                             <label for="flag-nsfw" id="nsfw" class="hv-lable">NSFW</label><br>
-
+                            
                             <input type="checkbox" id="flag-reli" class="bl-checkbox">
                             <label for="flag-reli" id="reli" class="hv-lable">Religious</label><br>
-
+                            
                             <input type="checkbox" id="flag-poli" class="bl-checkbox">
                             <label for="flag-poli" id="poli" class="hv-lable">Political</label><br>
                         </div>
@@ -69,22 +83,22 @@
 
                             <input type="checkbox" id="flag-secc" class="bl-checkbox">
                             <label for="flag-secc" id="secc" class="hv-lable">Sexist</label><br>
-
+                            
                             <input type="checkbox" id="flag-expl" class="bl-checkbox">
                             <label for="flag-expl" id="expl" class="hv-lable">Explicit</label><br>
                         </div>
                     </div> -->
-                <h2 class="titles" style="margin-bottom: 1px;">
-                     Joke Type: 
-                </h2><br>
-
+                    <h2 class="titles" style="margin-bottom: 1px;">
+                        Joke Type: 
+                    </h2><br>
+                    
                     <div id="twopart">
                         <input type="checkbox" name="part" id="one" class="one" checked>
                         <label for="one" class="party">Single</label> 
                         <input type="checkbox" name="part" id="two"class="one" checked>
                         <label for="two" class="party">Two Part</label>
                     </div>
-
+                    
                     <input type="button" value="Hit It!" id="joke-request" onclick="jokeRequested()">
 
                 </div>
@@ -106,7 +120,8 @@
                 © Nakul Upasani
             </div>
         </div>
-    </div>
+    <!-- </div>
+</div> -->
     
 </body>
 </html>
