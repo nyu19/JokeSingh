@@ -81,6 +81,7 @@ body {
     text-align: center;
     display: inline-block;
     font-size: 20px;
+    letter-spacing: 3px;
     font-family: 'Architects Daughter', cursive;
     transition: box-shadow 0.4s ease-in-out;
 
