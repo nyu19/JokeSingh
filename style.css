@@ -100,8 +100,6 @@ body {
 }
 input[type='radio']{
     visibility: hidden;
-    
-
 }
 /* input[type='radio']:checked:after{
     width: 16px;
@@ -200,7 +198,9 @@ input + label{
     
     /* cursor: pointer; */
 }
-
+input + label{
+    cursor: pointer;
+}
 
 /* Disclaimer: The views expressed in this Website are not meant to offend any party.
 These have been collected from various platforms and we don't have any rights over the copy.
