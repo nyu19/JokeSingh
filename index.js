@@ -47,34 +47,34 @@ function jokeRequested(){
         case 0:
             
             if (d.getElementById("one").checked && d.getElementById("two").checked ){
-                type_sel = ""
+                type_sel = "?blacklistFlags=nsfw,racist,sexist,explicit"
             }
             else if(d.getElementById("one").checked && d.getElementById("two").checked ){
-                type_sel = ""
+                type_sel = "?blacklistFlags=nsfw,racist,sexist,explicit"
             }
             else if(d.getElementById("two").checked ){
-                type_sel = "?type=twopart"
+                type_sel = "?blacklistFlags=nsfw,racist,sexist,explicit&type=twopart"
                 // alert("Two Part")
             }
             else if(d.getElementById("one").checked ){
-                type_sel = "?type=single"
+                type_sel = "?blacklistFlags=nsfw,racist,sexist,explicit&type=single"
             }
             getJson(base_url+"Any" + type_sel)
             break;
         case 1:
                     
             if (d.getElementById("one").checked && d.getElementById("two").checked ){
-                type_sel = ""
+                type_sel = "?blacklistFlags=nsfw,racist,sexist,explicit"
             }
             else if(d.getElementById("one").checked && d.getElementById("two").checked ){
-                type_sel = ""
+                type_sel = "?blacklistFlags=nsfw,racist,sexist,explicit"
             }
             else if(d.getElementById("two").checked ){
-                type_sel = "?type=twopart"
+                type_sel = "?blacklistFlags=nsfw,racist,sexist,explicit&type=twopart"
                 // alert("Two Part")
             }
             else if(d.getElementById("one").checked ){
-                type_sel = "?type=single"
+                type_sel = "?blacklistFlags=nsfw,racist,sexist,explicit&type=single"
             }
 
             if(d.getElementById('joke-prog').checked){
@@ -99,7 +99,7 @@ function jokeRequested(){
             end_str = end_str.substring(0,end_str.length-1);
             // alert(end_str)
             getJson(base_url + end_str + type_sel)
-            // alert(base_url + end_str + type_sel)
+            alert(base_url + end_str + type_sel)
             break;
             // document.getElementById("output").textContent = resp.data.joke
 
