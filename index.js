@@ -99,7 +99,7 @@ function jokeRequested(){
             end_str = end_str.substring(0,end_str.length-1);
             // alert(end_str)
             getJson(base_url + end_str + type_sel)
-            alert(base_url + end_str + type_sel)
+            // alert(base_url + end_str + type_sel)
             break;
             // document.getElementById("output").textContent = resp.data.joke
 
